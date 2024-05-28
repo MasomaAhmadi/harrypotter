@@ -1,0 +1,76 @@
+.carousel-container{
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(101, 97, 97, 0.5)),
+              url('../../assets/images/bg.jpg');
+  background-size:cover;
+  width: 100%;
+  object-fit:cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.carousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+  padding:2rem 5rem;
+  margin: 0 auto;
+}
+
+.carousel-btn{
+  color: white;
+  font-size: 5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-img{
+  width: 25rem;
+  height: 23rem;
+  float: center;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h4-carousel{
+  padding: 1rem;
+  color: white;
+}
+
+.more{
+  width: 30%;
+  float: center;
+  margin: 0 auto;
+}
+
+.carousel-link{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.outlet{
+  color: #999;
+  text-align: justify;
+  width: 70%;
+  background-color: rgba(59, 52, 52, 0.5);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}

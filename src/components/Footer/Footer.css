@@ -1,0 +1,26 @@
+.photo {
+  text-align: left;
+}
+.photo img {
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  .photo img{
+    width: 80%;
+  }
+}
+.fullWidth {
+  background-color: rgb(186, 182, 253);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    margin: 0px;
+}
+
+.h2{
+  padding: 1rem;
+}
+

@@ -1,0 +1,34 @@
+.gap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 0 auto;
+}
+
+.w-img-home {
+  width: 40%;
+}
+
+.w-txt-home {
+  width: 100%;
+}
+
+.home-img {
+  padding-top: 5rem;
+  /* max-width: 100%; */
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+}

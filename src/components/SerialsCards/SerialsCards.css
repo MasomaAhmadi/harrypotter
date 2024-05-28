@@ -1,0 +1,44 @@
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serials-btn {
+  background-color: rgb(165, 161, 231);
+  border: none;
+  border-radius: 9px !important;
+  width: 80%;
+}
+
+.serials-btn:hover {
+  scale: 1.1 1;
+  transition: 0.5s;
+}
+
+.center {
+  text-decoration: none;
+}
+.serialsImg {
+  width: 5rem;
+  height: 18rem;
+  object-fit: cover;
+  object-position: 0px -1px;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,82 @@
+.profs {
+    width: 50%;
+    float: left;
+    
+}
+
+.text{
+    text-align: justify;
+}
+
+.container1{
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: #777 solid 1px;
+    padding-top: 1rem;
+
+}
+
+.padd-1rem{
+    padding: 1rem;
+}
+
+.th{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 0.6rem 2rem !important;
+    
+}
+
+tr{
+    text-align: center;
+}
+
+.teacherImg{
+    width: 60%;
+    height: 40%;
+    float: right;
+}
+
+.teacher-div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+.teacher-div > div{
+    text-align: right; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+table{
+    text-align: right;
+    
+}
+
+.founders{
+    width: 100%;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 4rem ;
+    margin-bottom: solid 1px #777;
+}
+
+.caption{
+    font-size: 15px;
+    text-align: center;
+}
+
