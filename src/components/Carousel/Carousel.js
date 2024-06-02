@@ -28,8 +28,6 @@ const Carousel = ({ CharactersData }) => {
 
   return (
     <div className="carousel-container">
-      {/* if(activeIndex==1 || activeIndex==8)
-      { */}
         <div className="carousel">
           <Link to={9}>
             <button
@@ -63,41 +61,8 @@ const Carousel = ({ CharactersData }) => {
               &gt;
             </button>
           </Link>
-        </div>
-      {/* // } */}
-      {/* else
-      { */}
-        {/* <div className="carousel">
-          <button
-            className="carousel__btn carousel__btn--next carousel-btn"
-            onClick={nextSlide}
-          >
-            &lt;
-          </button>
-          <div className="carousel__slide img-container">
-            <img
-              className="carousel-img"
-              src={CharactersData[activeIndex].img}
-              alt={CharactersData[activeIndex].title}
-            />
-            <h4 className="h4-carousel">{CharactersData[activeIndex].title}</h4>
-            <Link
-              to={`/characters/${CharactersData[activeIndex].id}`}
-              className="carousel-link"
-            >
-              <img src={more} className="more pulse" />
-              <span>معرفی</span>
-            </Link>
-          </div>
-
-          <button
-            className="carousel__btn carousel__btn--prev carousel-btn"
-            onClick={prevSlide}
-          >
-            &gt;
-          </button>
-        </div> */}
-      {/* } */}
+      </div>
+      
       <div className="outlet">
         <Outlet />
       </div>

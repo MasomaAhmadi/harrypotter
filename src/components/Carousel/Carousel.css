@@ -66,6 +66,13 @@
   padding: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .outlet{
+    width: 90%;
+  }
+  
+}
+
 @keyframes pulse {
   from { transform: scale(0.8); }
   to { transform: scale(1.2); }
