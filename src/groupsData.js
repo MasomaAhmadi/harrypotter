@@ -107,7 +107,7 @@ export let serials = [
     id: 1,
     title: "هری پاتر و سنگ جادو",
     episod: `۱`,
-    link: `https://www.aparat.com/v/tYeoa`,
+    link: `https://www.aparat.com/v/s637888`,
     img: `https://afarinak.com/media/cache/83/9a/839a5d6208317208068d9b1315ee60ac.jpg`,
   },
   {

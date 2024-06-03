@@ -21,6 +21,7 @@
 .pad-right{
   padding-right: 30px;
   padding-top: 30px;
+
 }
 
 .grid-item {
@@ -34,6 +35,20 @@
 @media screen and (max-width: 768px) {
   .grid-container {
     grid-template-columns: 50% 50%;
+  }
+
+  .pad-right{
+    font-size: 20px;
+    padding-right: 10px;
+  }
+
+  .flexbox{
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
+
+  .grid-container{
+    width: 95%;
   }
 }
 @media screen and (max-width: 425px) {

@@ -5,11 +5,11 @@ function Footer() {
   return (
     <footer>
       <Row className="fullWidth m-0">
-        <Col className="col-sm-12 col-md-6">
+        <Col className="col-sm-8 col-md-6">
           <h2 className="h2">هری پاتر و هاگوارتز</h2>
-          <p>مکتب علوم‌وفنون جادوگری در دنیای هری‌ پاتر</p>
+          <p className="txt-footer">مکتب علوم‌وفنون جادوگری در دنیای هری‌ پاتر</p>
         </Col>
-        <Col className="photo col-sm-12 col-md-6">
+        <Col className="photo col-sm-4 col-md-6">
           <img src={Hogarts} className="p-3 float-left" />
         </Col>
       </Row>

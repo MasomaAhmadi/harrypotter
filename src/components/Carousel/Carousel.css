@@ -2,7 +2,7 @@
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(101, 97, 97, 0.5)),
               url('../../assets/images/bg.jpg');
   background-size:cover;
-  width: 100%;
+  width: 100vw;
   object-fit:cover;
     background-repeat: no-repeat;
     padding: 2rem;
@@ -29,11 +29,13 @@
   width: 25rem;
   height: 23rem;
   float: center;
+  align-items: center;
 }
 
 .img-container{
   display: flex;
   justify-content: center;
+  align-items: center;
   align-items: center;
   flex-direction: column;
 }
@@ -70,7 +72,45 @@
   .outlet{
     width: 90%;
   }
+
   
+  .carousel{
+    width: 90%;
+    gap: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 569px){
+  .carousel-img{
+    width: 15rem;
+    height: 15rem;
+    
+  }
+
+  .outlet{
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .carousel{
+    padding: 0rem;
+    width: 100%;
+    gap: 0px;
+  }
+
+  .carousel-btn{
+    font-size: 3rem;
+  }
+
+  .h4-carousel{
+    font-size:1rem;
+  }
+
+  .carousel-container{
+    padding: 1rem;
+  }
+
 }
 
 @keyframes pulse {

@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import { GroupsData } from "../../groupsData";
 import { Container, Col, Row } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
-import './Groups.css';
+import "./Groups.css";
 import Footer from "../../components/Footer/Footer";
-import first from '../../assets/images/first.png';
-import second from '../../assets/images/second.png';
-import third from '../../assets/images/third.png';  
-import fourth from '../../assets/images/fourth.png';
+import first from "../../assets/images/first.png";
+import second from "../../assets/images/second.png";
+import third from "../../assets/images/third.png";
+import fourth from "../../assets/images/fourth.png";
 
 function Groups() {
   console.log("groupData", GroupsData);
@@ -23,23 +23,54 @@ function Groups() {
       <div>
         <Container>
           <Row className="container1">
-            <Col sm={8} className="text">
+            <Col sm={12} md={6} lg={9} className="text">
               <h3 className="padd-1rem">{groupInfo.groupName}</h3>
-              {groupInfo.text}
+              <p>{groupInfo.text} </p>
             </Col>
-            <Col sm={4} className="prof">
-              <img className="profs p-3" src={groupInfo.img} />
+            <Col sm={12} md={6} lg={3} className="prof">
+              <img className="img-fluid p-3" src={groupInfo.img} />
             </Col>
           </Row>
+            
+          <Row className="teacher-div">
+            <Col className="imgTxt" lg={3}>
+              <img className="myImage" src={groupInfo.teacherImg} />
+              <div>{groupInfo.teacher}</div>
+            </Col>
 
-          <Row className="container1">
-            <div className="teacher-div">
-              <div className="imgTxt">
-                <img className="teacherImg" src={groupInfo.teacherImg} />
-                <div>{groupInfo.teacher}</div>
-              </div>
 
-              <Table responsive="sm" className="col-8">
+          {/* mobile table  */}
+            <Col>
+              <table className="sm-table">
+                <tr>
+                  <th style={{ backgroundColor: groupInfo.btn }} className="th">پایه گذار</th>
+                  <td className="td">{groupInfo.founder}</td>
+                </tr>
+                <tr>
+                  <th style={{ backgroundColor: groupInfo.btn }} className="th">رنگ</th>
+                  <td className="td">{groupInfo.color}</td>
+                </tr>
+                <tr>
+                  <th style={{ backgroundColor: groupInfo.btn }} className="th">حیوان</th>
+                  <td className="td">{groupInfo.animal}</td>
+                </tr>
+                <tr>
+                  <th style={{ backgroundColor: groupInfo.btn }} className="th">عنصر</th>
+                  <td className="td">{groupInfo.element}</td>
+                </tr>
+                <tr>
+                  <th style={{ backgroundColor: groupInfo.btn }} className="th">روح</th>
+                  <td className="td">{groupInfo.soul}</td>
+                </tr>
+                <tr>
+                  <th style={{ backgroundColor: groupInfo.btn }} className="th">اتاق مشترک</th>
+                  <td className="td">{groupInfo.room}</td>
+                </tr>
+              </table>
+
+
+              {/* laptop table  */}
+              <Table responsive="sm" className="md-table" sm={12} md={8} lg={9}>
                 <thead>
                   <tr>
                     <th
@@ -91,12 +122,13 @@ function Groups() {
                   </tr>
                 </tbody>
               </Table>
-            </div>
+            </Col>
           </Row>
+            
         </Container>
 
         <Row className="container2">
-          <Col>
+          <Col sm={12} md={12} lg={6}>
             <p>
               هاگوارتز بیش از هزار سال پیش تاسیس شده. تاریخ دقیقش نامشخصه. چهار
               نفر از برجسته ترین جادوگرها و ساحره‌های آن دوران، هاگوارتز را
@@ -118,12 +150,12 @@ function Groups() {
               اسلیترین از مدرسه رفت.
             </p>
           </Col>
-          <Col>
+          <Col sm={12} md={12} lg={6}>
             <img
               src="https://files.virgool.io/upload/users/106063/posts/uocvmleljffv/xfwygj7x501j.jpeg"
               className="founders"
             />
-            <div >
+            <div>
               <p className="caption">
                 عکسی از ( از بالا سمت راست ) روونا ریونکلا گودریک گریفیندور
                 سالازار اسلیترین و هلگا هافلپاف

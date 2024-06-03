@@ -1,9 +1,9 @@
-.row {
+/* .row-serials {
   display: flex;
   justify-content: center;
   flex-direction: row;
   padding: 10px;
-}
+} */
 
 .container {
   display: flex;

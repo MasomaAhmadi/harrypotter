@@ -6,13 +6,35 @@
 }
 @media screen and (max-width: 768px) {
   .photo img{
-    width: 80%;
+    width: 60%;
+  }
+
+  .fullWidth{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .txt-footer{
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .h2{
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 .fullWidth {
   background-color: rgb(186, 182, 253);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer{

@@ -8,7 +8,7 @@ function Cards({ groupName, description, img, btn,id }) {
     <Card className="cards">
       <Card.Img
         variant="top"
-        style={{ height: "10rem", width: "10rem", textAlign: "center" }}
+        style={{ height: "10rem", width: "10rem", float:"center" }}
         src={img} 
       />
       <Card.Body className="card-body" style={{ height: "15rem" }}>

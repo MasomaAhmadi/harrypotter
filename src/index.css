@@ -16,7 +16,8 @@
     
 }
 
-html{
+html, body{
     overflow-x:hidden;
-    /* overflow:scroll */
+    height: 100%;
+    width: 100%;
 }
