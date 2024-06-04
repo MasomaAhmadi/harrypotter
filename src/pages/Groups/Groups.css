@@ -75,7 +75,9 @@ tr {
   align-items: center;
   padding: 2rem 4rem;
   margin-bottom: solid 1px #777;
+  margin: 0 auto;
 }
+
 
 .caption {
   font-size: 15px;

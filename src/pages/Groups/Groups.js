@@ -126,6 +126,7 @@ function Groups() {
           </Row>
             
         </Container>
+      
 
         <Row className="container2">
           <Col sm={12} md={12} lg={6}>
@@ -163,7 +164,7 @@ function Groups() {
             </div>
           </Col>
         </Row>
-      </div>
+        </div>
       <Footer />
     </>
   );
